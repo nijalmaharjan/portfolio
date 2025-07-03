@@ -8,8 +8,8 @@ import PageRevealer from "./Components/PageRevealer";
 const font = Roboto({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
-  title: "Prajal Maharjan - Software Developer",
-  description: "Prajal Maharjan's Personal Portfolio",
+  title: "Nijal Maharjan - Video Editor",
+  description: "Nijal Maharjan Personal Portfolio",
 };
 
 export default function RootLayout({ children }) {

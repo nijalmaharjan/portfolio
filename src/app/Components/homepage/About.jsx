@@ -22,6 +22,7 @@ const About = () => {
     <>
       <SectionWrapper className="hidden items-center justify-center lg:flex">
         <div
+          id="about"
           ref={parallaxTarget}
           onMouseEnter={() => setCursorVariant("about")}
           onMouseLeave={() => setCursorVariant("default")}

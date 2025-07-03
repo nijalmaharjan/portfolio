@@ -44,6 +44,7 @@ const ContactSection = () => {
 
   return (
     <div
+    id="contacts"
       className="my-20 mt-40 px-4"
       onMouseEnter={() => setCursorVariant("hide")}
       onMouseLeave={() => setCursorVariant("default")}

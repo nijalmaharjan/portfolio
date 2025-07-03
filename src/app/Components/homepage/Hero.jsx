@@ -34,9 +34,15 @@ function Hero() {
       <nav className="flex w-full items-center justify-between py-7">
         <img src="/logo.png" alt="Logo" width={44} height={44} />
         <ul className="md:text-md text-md flex list-disc gap-10 pl-4 lg:pl-8">
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contacts">Contact</a>
+          </li>
         </ul>
       </nav>
       <div className="relative mt-10 flex w-full flex-col-reverse items-center lg:flex-row lg:justify-center">
@@ -70,7 +76,8 @@ function Hero() {
               className="mt-8 flex justify-center gap-4 lg:justify-start"
               style={{ y: lgParallax }}
             >
-              <motion.button
+              <motion.a
+                href="/#contacts"
                 className="group flex w-44 items-center justify-center gap-1 rounded-full border border-black bg-white px-6 py-2 ring ring-black"
                 style={{ boxShadow: "5px 5px 0px 0px black" }}
                 whileHover={{
@@ -106,8 +113,7 @@ function Hero() {
                     <ChevronsRight size={16} />
                   </motion.div>
                 </span>
-              </motion.button>
-             
+              </motion.a>
             </motion.div>
           </div>
         </div>
