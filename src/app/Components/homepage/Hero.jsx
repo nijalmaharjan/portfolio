@@ -107,43 +107,7 @@ function Hero() {
                   </motion.div>
                 </span>
               </motion.button>
-              <motion.a
-                href={`/Prajal Maharjan Resume.pdf`}
-                download="Prajal Maharjan Resume.pdf"
-                className="group flex w-44 cursor-none items-center justify-center gap-1 rounded-full border border-black bg-white px-6 py-2"
-                style={{ boxShadow: "5px 5px 0px 0px black" }}
-                whileHover={{
-                  boxShadow: "6px 7px 2px 0px black",
-                  scale: 1.001,
-                }}
-                whileTap={{
-                  boxShadow: "4px 4px 0px 0px black",
-                  scale: 0.991,
-                }}
-                transition={{ duration: 0.2 }}
-                onMouseEnter={() => setIsHoveredCV(true)}
-                onMouseLeave={() => setIsHoveredCV(false)}
-              >
-                <motion.span
-                  initial={{ x: 6 }}
-                  animate={isHoveredCV ? { x: 0, opacity: 1 } : { x: 6 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  Resume
-                </motion.span>
-                <span className="overflow-hidden">
-                  <motion.div
-                    initial={{ x: -6, opacity: 0 }}
-                    animate={
-                      isHoveredCV ? { x: 0, opacity: 1 } : { x: -6, opacity: 0 }
-                    }
-                    transition={{ duration: 0.3 }}
-                    className="flex items-center"
-                  >
-                    <Download size={16} />
-                  </motion.div>
-                </span>
-              </motion.a>
+             
             </motion.div>
           </div>
         </div>
